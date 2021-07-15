@@ -1,0 +1,105 @@
+[
+  [{
+      "name": "Printed",
+      "show": true,
+      "price": 45,
+      "color": "Red",
+      "size": "M,S",
+      "thumbnailUrl": "https://via.placeholder.com/150/92c952",
+      "url": "https://via.placeholder.com/600/92c952",
+      "description": "To add or edit your company address select the avatar on the top right of the navigation bar. A menu will appear. Please select the \"Billing Information\" option. Once selected, update your address information in the appropriate boxes and scroll down to save your updated information by clicking on the \"Save\" button."
+    },
+    {
+      "name": "Colour",
+      "show": true,
+      "price": 10,
+      "color": "Black",
+      "size": "",
+      "thumbnailUrl": "https://via.placeholder.com/150/d32776",
+      "url": "https://via.placeholder.com/600/d32776",
+      "description": "To add or edit your company tax information select the avatar on the top right of the navigation bar. A menu will appear. Please select the \"Billing Information\" option. Once selected, update your Tax ID number in the appropriate boxes and scroll down to save your updated information by clicking on the \"Save\" button."
+    },
+    {
+      "name": "T-shirt",
+      "show": true,
+      "price": 20,
+      "color": "Skin",
+      "size": "M,S",
+      "thumbnailUrl": "https://via.placeholder.com/150/f66b97",
+      "url": "https://via.placeholder.com/600/f66b97",
+      "description": "To add or edit your company tax information select the avatar on the top right of the navigation bar. A menu will appear. Please select the \"Billing Information\" option. Once selected, update your Tax ID number in the appropriate boxes and scroll down to save your updated information by clicking on the \"Save\" button."
+    },
+    {
+      "name": "T-shirt",
+      "show": true,
+      "price": 20,
+      "color": "Sky blue",
+      "size": "M,S, XL,XXL",
+      "thumbnailUrl": "https://via.placeholder.com/150/f66b97",
+      "url": "https://via.placeholder.com/600/f66b97",
+      "description": "To add or edit your company tax information select the avatar on the top right of the navigation bar. A menu will appear. Please select the \"Billing Information\" option. Once selected, update your Tax ID number in the appropriate boxes and scroll down to save your updated information by clicking on the \"Save\" button."
+    },
+    {
+      "name": "T-shirt",
+      "show": true,
+      "price": 20,
+      "color": "Skeme",
+      "size": "M, XL,XXL",
+      "thumbnailUrl": "https://via.placeholder.com/150/f66b97",
+      "url": "https://via.placeholder.com/600/f66b97",
+      "description": "To add or edit your company tax information select the avatar on the top right of the navigation bar. A menu will appear. Please select the \"Billing Information\" option. Once selected, update your Tax ID number in the appropriate boxes and scroll down to save your updated information by clicking on the \"Save\" button."
+    },
+    {
+      "name": "T-shirt",
+      "show": true,
+      "price": 20,
+      "color": "S",
+      "size": "M,XXL",
+      "thumbnailUrl": "https://via.placeholder.com/150/f66b97",
+      "url": "https://via.placeholder.com/600/f66b97",
+      "description": "To add or edit your company tax information select the avatar on the top right of the navigation bar. A menu will appear. Please select the \"Billing Information\" option. Once selected, update your Tax ID number in the appropriate boxes and scroll down to save your updated information by clicking on the \"Save\" button."
+    }
+  ],
+  [{
+      "name": "Suits",
+      "show": true,
+      "price": 67,
+      "color": "S",
+      "size": "M,L,XXL",
+      "url": "https://via.placeholder.com/600/1ee8a4",
+      "thumbnailUrl": "https://via.placeholder.com/150/1ee8a4",
+      "description": "To add or edit your company address select the avatar on the top right of the navigation bar. A menu will appear. Please select the \"Billing Information\" option. Once selected, update your address information in the appropriate boxes and scroll down to save your updated information by clicking on the \"Save\" button."
+    },
+    {
+      "name": "Suits",
+      "show": true,
+      "price": 34,
+      "color": "S",
+      "size": "M,L,XXL, XXXL",
+      "url": "https://via.placeholder.com/600/66b7d2",
+      "thumbnailUrl": "https://via.placeholder.com/150/66b7d2",
+      "description": "To add or edit your company tax information select the avatar on the top right of the navigation bar. A menu will appear. Please select the \"Billing Information\" option. Once selected, update your Tax ID number in the appropriate boxes and scroll down to save your updated information by clicking on the \"Save\" button."
+    }
+  ],
+  [{
+      "name": "Party Tie",
+      "show": true,
+      "price": 13,
+      "color": "S",
+      "size": "M,L,XXL, XXXL",
+      "url": "https://via.placeholder.com/600/fdf73e",
+      "thumbnailUrl": "https://via.placeholder.com/150/fdf73e",
+      "description": "To add or edit your company address select the avatar on the top right of the navigation bar. A menu will appear. Please select the \"Billing Information\" option. Once selected, update your address information in the appropriate boxes and scroll down to save your updated information by clicking on the \"Save\" button."
+    },
+    {
+      "name": "Office Tie",
+      "show": true,
+      "price": 12,
+      "color": "S",
+      "size": "M,L,XXL, XXXL",
+      "url": "https://via.placeholder.com/600/fdf73e",
+      "thumbnailUrl": "https://via.placeholder.com/150/fdf73e",
+      "description": "To add or edit your company tax information select the avatar on the top right of the navigation bar. A menu will appear. Please select the \"Billing Information\" option. Once selected, update your Tax ID number in the appropriate boxes and scroll down to save your updated information by clicking on the \"Save\" button."
+    }
+  ]
+]
