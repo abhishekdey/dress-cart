@@ -1,60 +1,25 @@
-<div class="content" role="main">
-  <div class="nav-bar-menu">
-    <div class="grid-container link">
-      <div class="cursor-enabled" *ngFor="let r of routeParams; let i = index" [ngClass]="{'active': activeIndex === i}" (click)="contentData(i); activeIndex = i">{{r.type}}</div>
-      <div>
-        <input type="value" placeholder="Type text" (ngModelChange)="searchRecords($event)" [(ngModel)]="recordsSearch">
+<header-component></header-component>
+
+{{recordsList[activeNavLinks]?.length}} {{activeNavLinks}}
+<home-component *ngIf="!recordsList[activeNavLinks]?.length"></home-component>
+
+<ng-container *ngIf="recordsList[activeNavLinks]?.length">
+  <div class="grid-container link image-grid">
+    <div *ngFor="let items of recordsList[activeNavLinks]; let i = index;" class="grid-container image-grid">
+      <div class="product-image cursor-enabled">
+        <img (click)="productdetails(i)" [src]="items.thumbnailUrl" alt="" />
+      </div>
+      <div class="product-name text-bold f-10">
+        <span>Product Name : </span>{{items.name}}
+        <div class="product-name">
+          <span>Product Price : </span>{{items.price | currency}}
+        </div>
       </div>
     </div>
   </div>
+</ng-container>
+<ng-container *ngIf="isFilterSearch && !filteredData.length;">
+  <div class="no-details"> No records Found </div>
+</ng-container>
 
-  <ng-container *ngIf="!isFilterSearch || filteredData.length">
-    <ng-container *ngIf="!activeNavLinks.length && !getRecordList();">
-      <img src="https://via.placeholder.com/960/92c952" alt="" />
-    </ng-container>
-
-    <ng-container *ngIf="activeNavLinks.length  && !getRecordList()">
-      <div class="grid-container link image-grid">
-        <div *ngFor="let items of activeNavLinks; let i = index;" class="grid-container image-grid">
-          <div class="product-image cursor-enabled">
-            <img (click)="productdetails(i)" [src]="items.thumbnailUrl" alt="" />
-          </div>
-          <div class="product-name text-bold f-10">
-            <span>Product Name : </span>{{items.name}}
-            <div class="product-name">
-              <span>Product Price : </span>{{items.price | currency}}
-            </div>
-          </div>
-        </div>
-      </div>
-    </ng-container>
-    <ng-container *ngIf="activeNavLinks.length && getRecordList()">
-      <div class=" grid-container detail-image">
-        <div class="detail-image">
-          <img class="m-10" [src]="details.url" alt="" />
-          <div class="detail-name text-bold f-10">
-            <span>Product Name : </span>{{details.name}}
-            <div class="detail-name">
-              <span>Product Price : </span>{{details.price | currency}}
-            </div>
-            <div class="detail-name">
-              <span>Product Color : </span>{{details.color}}
-            </div>
-            <div class="detail-name">
-              <span>Product Size : </span> {{details.size}}
-            </div>
-          </div>
-        </div>
-      </div>
-    </ng-container>
-  </ng-container>
-  <ng-container *ngIf="isFilterSearch && !filteredData.length;">
-    <div class="no-details"> No records Found </div>
-  </ng-container>
-
-  <div class="nav-bar-menu footer">
-    <div class="grid-container link">
-      <div class="disabled" *ngFor="let r of footer; let i = index">{{r.type}}</div>
-    </div>
-  </div>
-</div>
+<footer-component></footer-component>

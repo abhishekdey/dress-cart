@@ -1,0 +1,10 @@
+<div>
+    <div class="nav-bar-menu">
+        <div class="grid-container link">
+            <div *ngFor="let r of routeParams; let i = index" [ngClass]="{active : activatedIndex === i}" (click)="contentData(i); activatedIndex = i">{{r.type}}</div>
+            <input type="value" placeholder="Search Text" [ngModel]="recordsList" (ngModelChange)="searchRecords($event)">
+        </div>
+
+    </div>
+
+</div>

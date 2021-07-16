@@ -1,0 +1,24 @@
+<ng-container *ngIf="!isFilterSearch || filteredData.length">
+  <ng-container *ngIf="activeNavLinks.length && getRecordList()">
+    <div class=" grid-container detail-image">
+      <div class="detail-image">
+        <img class="m-10" [src]="details.url" alt="" />
+        <div class="detail-name text-bold f-10">
+          <span>Product Name : </span>{{details.name}}
+          <div class="detail-name">
+            <span>Product Price : </span>{{details.price | currency}}
+          </div>
+          <div class="detail-name">
+            <span>Product Color : </span>{{details.color}}
+          </div>
+          <div class="detail-name">
+            <span>Product Size : </span> {{details.size}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</ng-container>
+<ng-container *ngIf="isFilterSearch && !filteredData.length;">
+  <div class="no-details"> No records Found </div>
+</ng-container>

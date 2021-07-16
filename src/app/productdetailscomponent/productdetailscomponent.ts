@@ -1,26 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-import { AppService } from '../app.service';
 
 
 @Component({
-  templateUrl: './productcomponent.html',
+  templateUrl: './productdetailscomponent.html',
 })
 
-export class ProductListComponent implements OnInit {
+export class ProductDetailsComponent implements OnInit {
   recordsList: any = [];
+  routeParams = [{ type: 'Tshirts' }, { type: 'Suits' }, { type: 'Tie' }];
   footer = [{ type: 'Contact US' }, { type: 'Sitemap' }, { type: 'Location' }];
-  activeNavLinks: any = -1;
+  activeNavLinks: any = [];
   details: any = {};
   recordsSearch: string = '';
   activeIndex: Number = -1;
   filteredData: any = [];
   isFilterSearch: boolean = false;
-  constructor(private appService: AppService) {
-    this.appService.getActivatedRoute().subscribe(data => this.activeNavLinks = data);
+  constructor() {
+  }
+
+  contentData(routeName: number) {
+    this.resetFiltererd();
+    this.activeNavLinks = this.recordsList[routeName];
   }
 
   productdetails(imageIndex: number) {
-    this.details = this.recordsList[this.activeNavLinks][imageIndex];
+    this.details = this.activeNavLinks[imageIndex];
   }
 
   ngOnInit() {
